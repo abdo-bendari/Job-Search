@@ -9,6 +9,7 @@ This application specifically describes searching for a job related to their fie
  * Handles the Job Applications
 ## Useing  
 
+ * JavaScript
  * Express.js
  * DB ( MongoDB )
  * ORM Mongoose
