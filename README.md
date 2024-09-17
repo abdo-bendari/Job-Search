@@ -55,7 +55,7 @@ $ npm i bcrypt
 8. Forget password 
 9. Get all accounts associated to a specific recovery Email
 
-### Company APIs
+## Company APIs
 
 1. Add company 
     - Only ( Company_HR ) role
@@ -74,7 +74,7 @@ $ npm i bcrypt
     - authorized with role (  Company_HR )
 
 
-### # Jobs APIs
+## Jobs APIs
 
 1. Add Job 
 2. Update Job
