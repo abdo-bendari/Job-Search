@@ -1,27 +1,39 @@
-# Project Title
+# Job Search App
 
-A short description about the project and/or client.
+This application specifically describes searching for a job related to their field or area of ​​interest. Various components can be created within the Index.js file which acts as the root file. These components contain program code for application programming interface (API) calls, posting job search details, and error messages in case of wrong input. It also makes it easier for the company to deal with users, determine their role, and receive applicants for the job, as the user is linked to the company’s app in order to apply for the job. I think it is beneficial and saves time for all parties. Let’s explain that !.
+## Features
 
-## Getting Started
+ * Filter option to get the required job.
+ * Handles the user’s data.
+ * Handles the company’s data.
+ * Handles the Job Applications
+## Useing  
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+ * Express.js
+ * DB ( MongoDB )
+ * ORM Mongoose
 
-### Prerequisites
+### Collections
 
-The things you need before installing the software.
+* User Collection
+* Company Collection
+* Job Collection
+* Application Collection
 
-* You need this
-* And you need this
-* Oh, and don't forget this
-
-### Installation
-
-A step by step guide that will tell you how to get the development environment up and running.
+### Npm Modules 
 
 ```
-$ First step
-$ Another step
-$ Final step
+$ npm i express
+$ npm i joi
+$ npm i jsonwebtoken
+$ npm i mongoose
+$ npm i multer
+$ npm i nanoid
+$ npm i nodemon
+$ npm i nodemailer
+$ npm i uuidv4
+$ npm i cors
+$ npm i bcrypt
 ```
 
 ## Usage
