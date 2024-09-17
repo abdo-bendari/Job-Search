@@ -12,14 +12,6 @@ This application specifically describes searching for a job related to their fie
  * Express.js
  * DB ( MongoDB )
  * ORM Mongoose
-
-### Collections
-
-* User Collection
-* Company Collection
-* Job Collection
-* Application Collection
-
 ### Npm Modules 
 
 ```
@@ -36,15 +28,32 @@ $ npm i cors
 $ npm i bcrypt
 ```
 
-## Usage
+### Collections
 
-A few examples of useful commands and/or tasks.
+* User Collection
+* Company Collection
+* Job Collection
+* Application Collection
+## User APIs
 
-```
-$ First example
-$ Second example
-$ And keep this in mind
-```
+1. Sign Up
+2. Sign In
+    - Sign In using  (email or recoveryEmail or mobileNumber)  and password
+3. update account.
+    - you can update ( email , mobileNumber , recoveryEmail , DOB , lastName , firstName)
+    - if user update the email , mobileNumber the new data doesn’t conflict with any existing data in database
+    - only the owner of the account can update his account data
+4. Delete account
+    - only the owner of the account can delete his account data
+    - User must be loggedIn
+5. Get user account data 
+    - only the owner of the account can get his account data
+    - User must be loggedIn
+6. Get profile data for another user 
+    - send the userId in params or query
+7. Update password 
+8. Forget password 
+9. Get all accounts associated to a specific recovery Email
 
 ## Deployment
 
