@@ -1,4 +1,4 @@
-# Job Search App
+# About 
 
 This application specifically describes searching for a job related to their field or area of ​​interest. Various components can be created within the Index.js file which acts as the root file. These components contain program code for application programming interface (API) calls, posting job search details, and error messages in case of wrong input. It also makes it easier for the company to deal with users, determine their role, and receive applicants for the job, as the user is linked to the company’s app in order to apply for the job. I think it is beneficial and saves time for all parties. Let’s explain that !.
 ## Features
