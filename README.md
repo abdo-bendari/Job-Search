@@ -55,26 +55,45 @@ $ npm i bcrypt
 8. Forget password 
 9. Get all accounts associated to a specific recovery Email
 
-## Deployment
+### Company APIs
 
-Additional notes on how to deploy this on a live or release system. Explaining the most important branches, what pipelines they trigger and how to update the database (if anything special).
+1. Add company 
+    - Only ( Company_HR ) role
+2. Update company data
+    - only the company owner can update the data
+3. Delete company data
+    - only the company owner can delete the data
+    -  authorized with role ( Company_HR)
+4. Get company data 
+    - send the companyId in params to get the desired company data
+    - authorized with role ( Company_HR)
+5. Search for a company with a name. 
+    - authorized with the role ( Company_HR and User)
+6. Get all applications for specific Job
+    - each company Owner can take a look at the applications for his jobs only, he has no access to other companies’ application
+    - authorized with role (  Company_HR )
 
-### Server
 
-* Live:
-* Release:
-* Development:
+### # Jobs APIs
 
-### Branches
+1. Add Job 
+2. Update Job
+    - authorized with the role ( Company_HR )
+3. Delete Job
+    - authorized with the role ( Company_HR )
+4. Get all Jobs with their company’s information.
+5. Get all Jobs for a specific company.
+    - send the company name in the query and get this company jobs.
+6. Get all Jobs that match the following filters 
+    - filter with workingTime , jobLocation , seniorityLevel and jobTitle,technicalSkills
+    - one or more of them should applied   
+7. Apply to Job
+    - This API will add a new document in the application Collections with the new data
+    - authorized with the role ( User )
 
-* Master:
-* Feature:
-* Bugfix:
-* etc...
 
 ## Additional Documentation and Acknowledgments
 
 * Project folder on server:
 * Confluence link:
-* Asana board:
 * etc...
